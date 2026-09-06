@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSMRA Membership Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .payment-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 { color: #333; margin-bottom: 5px; }
+        h2 { color: #666; font-weight: normal; margin-top: 0; font-size: 1.1em; }
+        .fee { font-size: 2em; font-weight: bold; color: #222; margin: 20px 0; }
+        .pay-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background 0.2s;
+        }
+        .pay-btn:hover { background-color: #0056b3; }
+        .note { color: #777; font-size: 0.9em; margin-top: 15px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+<div class="payment-card">
+    <h1>MSMRA</h1>
+    <h2>Membership Subscription Payment</h2>
+    
+    <div class="fee">₹700</div>
+    
+    <a href="upi://pay?pa=9561922398@ybl&pn=Payment&am=700&cu=INR" class="pay-btn">
+        💳 PAY ₹700 NOW
+    </a>
+    
+    <p class="note">Click the button above to pay ₹700 using a supported UPI app such as Google Pay, PhonePe, Paytm or BHIM.</p>
+</div>
+
+</body>
+</html>
